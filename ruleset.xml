@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<ruleset name="Traumfewo">
+    <description>The Traumfewo coding standard.</description>
+
+    <exclude-pattern>*/openSource/*</exclude-pattern>
+
+    <!-- Import Symfony2 coding standard -->
+    <rule ref="Symfony2"/>
+	
+	<!-- but exclude NamingConventions -->
+	<rule ref="Zend.NamingConventions.ValidVariableName.NotCamelCaps">
+		<severity>0</severity>
+	</rule>
+	<rule ref="Zend.NamingConventions.ValidVariableName.StringVarNotCamelCaps">
+		<severity>0</severity>
+	</rule>
+	<rule ref="Symfony2.Commenting.FunctionComment.ParameterCommentsNotAligned">
+		<severity>0</severity>
+	</rule>
+</ruleset>
